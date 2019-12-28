@@ -1,0 +1,144 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminNavigate.Master.cs" Inherits="CoffeeShopManagement.View.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
+        body {
+            background-image: url(D:\AAAAAAAAAAAAAAAAAAAAAAAA\CoffeeShopManagementa_Ver02\CoffeeShopManagement\CoffeeShopManagement\img\background.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100vw;
+            height: 100vh;
+            background-color: #e0e0e0;
+            overflow: hidden;
+            font-size: 18px;
+            color: cornsilk;
+            font-family: 'Titillium Web', sans-serif;
+        }
+
+        .navbar {
+            overflow: hidden;
+        }
+
+        .navbar .menu a {
+            float: left;
+            font-size: 18px;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar .b {
+            float: right;
+            font-size: 18px;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        } 
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 18px;  
+            border: none;
+            outline: none;
+            color: black;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: #9f6060;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #b27f7f;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: activeborder;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+         a:link, a:visited {
+            
+            padding: 14px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        } 
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="navbar">
+
+            <div class="dropdown">
+                <button class="dropbtn">
+                    Search
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="AdminSearchCoffee.aspx">Coffee</a>
+                    <a href="AdminSearchCategory.aspx">Coffee Type</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">
+                    Add New 
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="AdminAddCoffee.aspx">New Coffee</a>
+                    <a href="AdminAddType.aspx">New Coffee Type
+                    </a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">
+                    History
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="ViewHistory.aspx">View History</a>
+                </div>
+            </div>
+
+            <div class="b">
+                Welcome Admin
+                <asp:LinkButton ID="lnkLogout" runat="server" OnClick="lnkLogout_Click" CausesValidation="false" ForeColor="Red">Logout</asp:LinkButton>
+            </div>
+            <asp:Panel ID="Panel1" runat="server" BackImageUrl="~/img/background.jpg" ScrollBars="Auto">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+            </asp:Panel>
+        </div>
+    </form>
+</body>
+</html>

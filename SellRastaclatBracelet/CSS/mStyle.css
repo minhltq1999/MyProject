@@ -1,0 +1,261 @@
+		body {
+				max-width:890px;
+				margin:0 auto;
+				height:auto;
+				background-color:#999999;
+		}
+		
+		header {
+				width:100%;
+				height:180px;
+		}
+		
+		nav { 
+				width:100%;
+				height:30px;
+				background-color:#CCCCCC;
+		}
+		nav a {
+				color:#9900FF;
+				font-weight:bold;
+				font-size:18px;
+				text-decoration:none;
+				width:18%;
+				height:30px;
+				text-align:center;
+				float:left;
+				line-height:30px;
+		}
+		nav a:hover {
+				color:#FFFFFF;
+				background-color:#000000;
+		}
+
+		article { 
+				width:69.7%;
+				max-height:398px;
+				float:left;
+				overflow:auto;
+		}
+		
+		article01 { 
+				width:100%%;
+				max-height:600px;
+				float:left;
+		}
+		
+		article01 #content {
+				background:#669966;
+				width:100%;
+				float:left;
+		}
+		article01 #content div { 
+				background:#FFFFFF;
+				float:left;
+				width:29%;
+		}
+		
+		article01 #content div p {
+				color:#00F;
+				text-align:center;
+				margin:0px;
+				font-size:80%;	
+		}		
+		
+		article #content {
+				background:#000000;
+				width:100%;
+				float:left;
+		}
+		article #content div { 
+				background:#FFFFFF;
+				float:left;
+				width:29%;
+				position:relative;
+		}
+		article #content div p {
+				color:#00F;
+				text-align:center;
+				margin:0px;
+				font-size:100%;	
+		}		
+		article #content div p del {
+				color:#666;
+				font-size:100%;
+		}
+		
+		article #content div new {
+				padding: 10px; 
+				position:absolute; 
+				left:40px;
+				top: 0px; 
+				width: 127px; 
+				height: 39px;
+		}
+		
+		aside { 
+				width:30.3%;
+				height:398px;	
+				background-color:#999999;					
+				color:#000000;
+				float:right;
+				overflow:auto;
+		}
+		
+		aside div { 		
+				margin-bottom:0px;
+		}
+		
+		aside div h4 { 
+				width:100%;
+				color:#FF0000;
+				background-color:#FFFFFF;
+				height:28px;
+				margin:0px;
+				text-align:center;
+				line-height:28px;
+				position: -webkit-sticky;
+  				position: sticky;
+  				top: 0;
+		}
+		
+		aside div table { 
+				width:100%;
+		}
+		
+		aside div table tr { 
+				width:100%;
+		}
+		
+		aside div table .td1 { 
+				width:35%;
+		}
+		
+		aside div table .td2 { 
+				text-align: justify;
+				font-size:80%;
+				width:65%;
+		}
+		
+		footer{ 
+			width:100%; 
+			height:200px; 
+			background-color:#333333; 
+			color:#FFFFFF; 
+			clear:both;
+			}
+				
+		footer .footer_left {
+			width:50%;
+			height:auto;
+			float:left;
+		}
+				
+		footer .footer_right {
+			width:25%;
+			height:auto;
+			float:right;
+			margin-top:30px;
+			margin-right:25px;
+		}
+				
+		ul {
+			list-style-type:square;
+			padding-top:15px;
+		}
+				
+		ul li {
+			font-size:18px;
+		}
+		
+		ul li del{
+			text-decoration:underline;
+		}
+				
+		footer p {
+			text-align:center;
+			font-style:italic;
+			padding-top:8px;
+			padding-bottom:20px;
+			clear:both;
+		}
+		
+		
+		
+		article h2 {
+		text-align:center; 
+		font-size:24px;
+		}
+		
+		article p {
+		text-align:justify;
+		margin: 10px;
+		font-size: 20px;
+		}
+		
+		article iframe {
+		margin: 10px;
+		}
+		
+		article table td{
+			padding:5px; 
+			font-size:20px;
+			color:#FF0000; 
+		} 
+		
+		article input{ 
+			width:250px; 
+			height:30px;
+		} 
+		article .btn {
+			width:100px;
+		} 
+		
+		#image{
+		margin: 0 auto;
+		width: 100%;
+		height: 180px;
+		border: 1px solid #333;
+		position:relative;
+		}
+	
+	
+	
+		#image	#slide{
+			  width: 100%;
+			  height: 180px;
+					  
+			}
+		
+		
+		#prev {
+			  position: absolute;
+			  top: 120px;
+			  left: 0px;
+			  width: 28px;
+			  hegit: 44px;
+			  display: none;
+			  
+			  
+			 }
+		
+		#next {
+			  position: absolute;
+			  top: 120px;
+			  right: 0px;
+			  width: 28px;
+			  hegit: 44px;
+			  display: none;
+			  
+			  
+			}
+	
+	#image:hover #prev {
+		  display: block;
+		  opacity: 0.6;
+		} 
+	
+	#image:hover #next {
+		  display: block;
+		  opacity: 0.6;
+		}

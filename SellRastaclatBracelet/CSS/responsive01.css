@@ -1,0 +1,17 @@
+		/* CSS Document */
+		@media screen and (max-width: 890px) {
+			
+		}
+		
+		@media screen and (max-width: 868px) {
+			aside { height:390px;}
+		}
+		
+		@media screen and (max-width: 768px) {
+			body { width:100%;}
+			article { width:100%; float:none;}
+			aside { width:100%; float:none;}
+		}
+
+
+

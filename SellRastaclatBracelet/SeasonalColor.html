@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<title>HTML5 Layout 2</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="CSS/mStyle.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive01.css">
+	</head>
+<body>
+	<header>
+	<script>
+		var t;
+		var stt = 1;
+
+		function next() {
+			clearInterval(t);
+			if(stt < 3) {
+			stt++;
+			document.getElementById("slide").src = "images/" + stt + ".jpg";
+			}
+			else {
+			stt = 1;
+			document.getElementById("slide").src = "images/" + stt + ".jpg";
+			}
+		
+			t = setInterval("next()", 3000);
+			
+		}
+			
+		function back() {
+			clearInterval(t);
+			if(stt > 1) {
+			stt--;
+			document.getElementById("slide").src = "images/" + stt + ".jpg";
+			}
+			else {
+			stt = 3;
+			document.getElementById("slide").src = "images/" + stt + ".jpg";
+			}
+		
+		t = setInterval("next()", 3000);
+		}
+	
+		t = setInterval("next()",2000);
+	</script>
+	<div id="image"> 
+	 <img div id="slide" src="images/1.jpg" width="100%" height="180"/>	</div>
+	</header>
+	<nav>
+		<a href="Web1010_1.html">Home</a>
+		<a href="about.html">About</a>
+		<a href="NewArrival.html">New Arrivals</a>
+		<a href="SeasonalColor.html" style="background-color:#00CCFF">Seasonal Colors</a>
+		
+	</nav>
+	<article01>
+		<div id="content" align="center" style="background:url(images/729493jzxzjnb3j9.gif)">
+			<div style="margin:3.2% 1.6% 1.6% 3.2%;">
+				<a href="https://rastaclat.com/collections/seasonal-colors-classic/products/classic-grey"><img src="images/2017June29_RC001GREY_Grey_480x.jpg" width="90%" height="150"></a>
+				<p>GREY</p>
+			</div>
+			<div style="margin:3.2% 1.6% 1.6% 1.6%;">
+				<a href="https://rastaclat.com/collections/seasonal-colors-classic/products/classic-french-navy"><img src="images/2017June29_RC001FRNY_French_Navy_480x.jpg" width="90%" height="150"></a>
+				<p>FRENCH NAVY</p>
+			</div>
+			<div style="margin:3.2% 3.2% 1.6% 1.6%;">
+				<a href="https://rastaclat.com/collections/seasonal-colors-classic/products/classic-salmon"><img src="images/2017June29_RC001SALM_Salmon_480x.jpg" width="90%" height="150"></a>
+				<p>SALMON</p>
+			</div>
+				
+			<div style="margin:1.6% 1.6% 1.6% 3.2%;">
+				<a href="https://rastaclat.com/collections/seasonal-colors-classic/products/classic-blue-steel"><img src="images/RC001BLST_BlueSteel-1_480x.jpg" width="90%" height="150"></a>
+				<p>BLUE STEEL</p>
+			</div>
+			<div style="margin:1.6% 1.6% 1.6% 1.6%;">
+				<a href="https://rastaclat.com/collections/seasonal-colors-classic/products/classic-faded-moss"><img src="images/RC001FDMS_FadedMoss-1_480x.jpg" width="90%" height="150"></a>
+				<p>FADE MOSS</p>
+			</div>
+			<div style="margin:1.6% 3.2% 1.6% 1.6%;">
+				<a href="https://rastaclat.com/collections/seasonal-colors-classic/products/classic-leaf"><img src="images/RC001LEAF_Leaf_ad280462-7c64-4ab9-924b-295917ebcc2a_480x.jpg" width="90%" height="150"></a>
+				<p>LEAF</p>
+			</div>
+			
+			<div style="margin:1.6% 1.6% 3.2% 3.2%;">
+				<a href="https://rastaclat.com/collections/seasonal-colors-classic/products/classic-mustard"><img src="images/RC001MSTD_Mustard_0a773f37-9703-4214-9aa0-d779a3caff79_480x.jpg" width="90%" height="150"></a>
+				<p>MUSTARD</p>
+			</div>
+			<div style="margin:1.6% 1.6% 3.2% 1.6%;">
+				<a href="https://rastaclat.com/collections/seasonal-colors-classic/products/classic-nile-blue"><img src="images/RC001NBLU_Nile_Blue_835f10b3-5a1f-496d-9c71-6bb367f7b7ba_480x.jpg" width="90%" height="150"></a>
+				<p>NILE BLUE</p>
+			</div>
+			<div style="margin:1.6% 3.2% 3.2% 1.6%;">
+				<a href="https://rastaclat.com/collections/seasonal-colors-classic/products/classic-red-clay-1"><img src="images/RC001RDCL_Red_Clay_5dbb985a-4b28-452f-8c3a-d5b24286cf8d_480x.jpg" width="90%" height="150"></a>
+				<p>RED CLAY</p>
+			</div>
+		</div>
+	</article01>
+	<footer> 
+	<div class = "footer_left">
+		<ul>
+			<li style="font-size:18px"> <del>More Info</del> </li>
+			<li style="font-size:18px"> Phone: (424) 397-7170</li>
+			<li style="font-size:18px"> Email:  support@rastaclat.com </li>
+			<a href="https://rastaclat.com/pages/privacy-policy" style="color:#FFFFFF"><li style="font-size:18px"> <del>Privacy Policy </del></li></a>
+		</ul>
+	</div>
+	
+	<div class = "footer_right">
+		<a href="https://www.facebook.com/RastaclatBrand/"><img src="images/Facebook-512.png" width = "38" height="38"></a>
+		<a href="https://twitter.com/rastaclat"><img src="images/Asset_24-512.png" width = "38" height="38"></a>
+		<a href="https://www.instagram.com/rastaclat/"><img src="images/Instagram-512.png" width = "38" height="38"></a>
+	</div>
+	<p>COPY RIGHT 2018 RASTACLAT @ ALL RESERVED </p>
+	</footer>
+</body>
+</html>

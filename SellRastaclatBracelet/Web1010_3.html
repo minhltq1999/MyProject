@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<title>HTML5 Layout 2</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="CSS/mStyle.css">
+	</head>
+<body>
+	<header>
+	<script>
+		var t;
+		var stt = 1;
+
+		function next() {
+			clearInterval(t);
+			if(stt < 3) {
+			stt++;
+			document.getElementById("slide").src = "images/" + stt + ".jpg";
+			}
+			else {
+			stt = 1;
+			document.getElementById("slide").src = "images/" + stt + ".jpg";
+			}
+		
+			t = setInterval("next()", 3000);
+			
+		}
+			
+		function back() {
+			clearInterval(t);
+			if(stt > 1) {
+			stt--;
+			document.getElementById("slide").src = "images/" + stt + ".jpg";
+			}
+			else {
+			stt = 3;
+			document.getElementById("slide").src = "images/" + stt + ".jpg";
+			}
+		
+		t = setInterval("next()", 3000);
+		}
+	
+		t = setInterval("next()",2000);
+	</script>
+	<div id="image"> 
+	 <img div id="slide" src="images/1.jpg" width="100%" height="180"/>
+	
+	</div>
+	</header>
+	<nav>
+		<a href="Web1010_1.html">Home</a>
+		<a href="about.html">About</a>
+	</nav>
+	<article>
+		<div id="content" align="center">
+			<div style="margin:3.2% 1.6% 1.6% 3.2%;">
+				<img src="images/RC001BLK2_Onyx_Ecom__54519.1440709939.1080.1080_1024x1024.jpg" width="90%" height="150"/>
+				<p><del>8$</del> 7.4</p>
+				<new><img src="images/bestseller.gif" width="116" height="29" /></new>
+			</div>
+			<div style="margin:3.2% 1.6% 1.6% 1.6%;">
+				<img src="images/RC001ELEP_Asphalt_Ecom__98888.1440710131.1080.1080_1024x1024.jpg" width="90%" height="150"/>
+				<p><del>13.5$</del>	5$</p>
+			</div>
+			<div style="margin:3.2% 3.2% 1.6% 1.6%;">
+				<img src="images/RC025ARMR_SV3M__50981.1480614777.1080.1080_1024x1024.jpg" width="90%" height="150""/>
+				<p><del>13.50$</del> 5$</p>
+				<new><img src="images/bestseller.gif" width="116" height="29" /></new>
+			</div>
+			
+			<div style="margin:1.6% 1.6% 1.6% 3.2%;">
+				<img src="images/RC001BLK2_Onyx_Ecom__54519.1440709939.1080.1080_1024x1024.jpg" width="90%" height="150"/>
+				<p><del>8$</del> 7.4</p>
+			</div>
+			<div style="margin:1.6% 1.6% 1.6% 1.6%;">
+				<img src="images/RC001ELEP_Asphalt_Ecom__98888.1440710131.1080.1080_1024x1024.jpg" width="90%" height="150"/>
+				<p><del>13.5$</del>	5$</p>
+			</div>
+			<div style="margin:1.6% 3.2% 1.6% 1.6%;">
+				<img src="images/RC025ARMR_SV3M__50981.1480614777.1080.1080_1024x1024.jpg" width="90%" height="150""/>
+				<p><del>13.50$</del> 5$</p>
+			</div>
+			
+			<div style="margin:1.6% 1.6% 3.2% 3.2%;">
+				<img src="images/RC001LVL9_MASTER_wht_Ecom__62895.1446150814.1080.1080_1024x1024.jpg"width="90%" height="150"/>
+				<p><del>9.9$</del>	5$</p>
+			</div>
+			<div style="margin:1.6% 1.6% 3.2% 1.6%;">
+				<img src="images/RC025TRNR_Trainer_BGNW_1024x1024.jpg" width="90%" height="150"/>
+				<p><del>12.9$</del>	7$</p>
+			</div>
+			<div style="margin:1.6% 3.2% 3.2% 1.6%;">
+				<img src="images/RC001WHT_ZionII_Ecom__80778.1440710285.1080.1080_1024x1024.jpg" width="90%" height="150"/>
+				<p><del>13.5$</del>	9$</p>
+				<new><img src="images/bestseller.gif" width="116" height="29" /></new>
+			</div>
+		</div>
+	</article>
+	<aside>
+		<div>
+		<h4> Most popular </h4>
+		<table width="100%">
+				<tr>
+					<td class="td1"><img src="images/RC025CHK_WHIT_1024x1024.jpg" width="100%" height="100"></td>
+					<td class="td2">All white everything! We had to make an all white Knotaclat! This bracelet is a sleek, single-knot polyester band.....</td>
+				</tr>
+			
+				<tr>
+					<td class="td1"><img src="images/RC025ARMR_SV3M__50981.1480614777.1080.1080_1024x1024.jpg" width="100%" height="100"></td>
+					<td class="td2">The Knot in shining Armory! This reflective Rastaclat bracelet features a single-knot silver reflective lace that glows when reflecting light!...
+</td>
+				</tr>
+				
+				<tr>
+					<td class="td1"><img src="images/RC025ORI_BLCK__51510.1461101725.1080.1080_1024x1024.jpg" width="100%" height="100"></td>
+					<td class="td2">All black everything! Because every collection needs the Orion Knotaclat bracelet. This all black Knotaclat will become your new every...</td>
+				</tr>
+			
+				<tr >
+					<td class="td1"><img src="images/product.jpg" width="100%" height="100"></td>
+					<td class="td2">It's time to upgrade to the business class Knotaclat. The Jet Rastaclat bracelet is a sleek black single-knot polyester band...</td>
+				</tr>
+			
+				<tr>
+					<td class="td1"><img src="images/product1.jpg" width="100%" height="100"></td>
+					<td class="td2">Get your wrist spaced out with the Rastaclat Galaxy print bracelet! This stellar design features a galactic view of stars...</td>
+				</tr>
+		  </table>
+		</div>
+	</aside>
+	<footer> 
+	<div class = "footer_left">
+		<ul>
+			<li style="font-size:18px"> <del>More Info</del> </li>
+			<li style="font-size:18px"> Careers</li>
+			<li style="font-size:18px"> FAQ </li>
+			<li style="font-size:18px"> Privacy Policy </li>
+		</ul>
+	</div>
+	
+	<div class = "footer_right">
+		<img src="images/Facebook-512.png" width = "38" height="38">
+		<img src="images/Asset_24-512.png" width = "38" height="38">
+		<img src="images/Instagram-512.png" width = "38" height="38">
+	</div>
+	<p>COPY RIGHT 2018 RASTACLAT @ ALL RESERVED </p>
+	</footer>
+</body>
+</html>
+

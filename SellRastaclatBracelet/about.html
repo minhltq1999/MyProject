@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="CSS/mStyle.css" rel="stylesheet" type="text/css" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<header>
+		<script>
+			var t;
+			var stt = 1;
+	
+			function next() {
+				clearInterval(t);
+				if(stt < 3) {
+				stt++;
+				document.getElementById("slide").src = "images/" + stt + ".jpg";
+				}
+				else {
+				stt = 1;
+				document.getElementById("slide").src = "images/" + stt + ".jpg";
+				}
+			
+				t = setInterval("next()", 3000);
+				
+			}
+				
+			function back() {
+				clearInterval(t);
+				if(stt > 1) {
+				stt--;
+				document.getElementById("slide").src = "images/" + stt + ".jpg";
+				}
+				else {
+				stt = 3;
+				document.getElementById("slide").src = "images/" + stt + ".jpg";
+				}
+			
+			t = setInterval("next()", 3000);
+			}
+		
+			t = setInterval("next()",2000);
+	</script>
+	<div id="image"> 
+	 <img div id="slide" src="images/1.jpg" width="100%" height="180"/>
+	
+	</div>
+	</header>
+	<nav>
+		<a href="Web1010_1.html">Home</a>
+		<a href="about.html">About</a>
+	</nav>
+	<article01>
+	<div id="content">
+	<h2 style="text-align:center"> Rastaclat </h2>
+	<p>Our mission for each person who wears Rastaclat is to seek the positive. The meaning of Rastaclat is literally the cloth of the righteous.
+		We believe in doing good for yourself and others positive action can change lives, inspire confidence& unite us as human beings. </p>
+	<p>Each Rastaclat product gives customers different messages, they focus on the inspiration behind the products, they are constantly innovating to create rich products, with them 		collections. This means that the collections include products that are simple in design and of high quality. And the success of Rastaclat is that the customer believes in the message and all that Rastaclat brings to them. According to the survey, consumers own about 9-15 of their products and are always waiting for new products to be released by Rastaclat. Coordination with other prestigious brands also greatly contributed to the trust of customers for Rastaclat.</p>
+	<center><iframe width="560" height="315" src="https://www.youtube.com/embed/wSsAxd46xBQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="margin-bottom: 30px"></iframe></center>
+	</div>
+	</article01>
+	
+	<footer> 
+	<div class = "footer_left">
+		<ul>
+			<li style="font-size:18px"> <del>More Info</del> </li>
+			<li style="font-size:18px"> Careers</li>
+			<li style="font-size:18px"> FAQ </li>
+			<li style="font-size:18px"> Privacy Policy </li>
+		</ul>
+	</div>
+	
+	<div class = "footer_right">
+		<img src="images/Facebook-512.png" width = "38" height="38">
+		<img src="images/Asset_24-512.png" width = "38" height="38">
+		<img src="images/Instagram-512.png" width = "38" height="38">
+	</div>
+	<p>COPY RIGHT 2018 RASTACLAT @ ALL RESERVED </p>
+	</footer>
+</body>
+</html>
